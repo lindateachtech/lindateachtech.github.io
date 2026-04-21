@@ -1,0 +1,429 @@
+/* -------------------------------------------------------
+ *
+ *     
+ *
+ * ------------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Darker+Grotesque:500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Poppins:Regular,400&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+  /* Fonts */
+  --text-font-family: 'Roboto';
+  --text-font-is-google: 1;
+  --text-font-family-fallback: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial;
+  --text-font-base: Roboto;
+  --header-h1-font-family: Raleway;
+  --header-h2-font-family: Raleway;
+  --header-h3-font-family: Roboto;
+  --header-h1-font-is-google: 1;
+  --header-h2-font-is-google: 1;
+  --header-h3-font-is-google: 1;
+  --header-font-family-fallback: Georgia, serif;
+  --code-font-family: 'Fira Code';
+  --code-font-is-google: 1;
+  --code-font-size: 1rem;
+  --code-inline-font-size: 1em;
+  --header-h1-font-size: 1.6rem;
+  --header-h2-font-size: 1.25rem;
+  --header-h3-font-size: 1.05rem;
+  --text-font-size: 0.78rem;
+
+
+  /* Colors */
+  --text-color: #4f4a42;
+  --header-color: #00002f;
+  --background-color: #ffffff;
+  --link-color: #e8315f;
+  --text-bold-color: #005a6d;
+  --code-highlight-color: rgba(255,255,0,0.5);
+  --inverse-text-color: #ffffff;
+  --inverse-background-color: #00002f;
+  --inverse-header-color: #ffffff;
+  --inverse-link-color: #e8315f;
+  --title-slide-background-color: #00002f;
+  --title-slide-text-color: #ffffff;
+  --header-background-color: #00002f;
+  --header-background-text-color: #ffffff;
+  --base: #0dc96f;
+  --white: #FFFFFF;
+  --black: #272822;
+  --azul-claro: #b8e6f9;
+}
+
+html {
+  font-size: var(--base-font-size);
+}
+
+body {
+  font-family: var(--text-font-family), var(--text-font-family-fallback), var(--text-font-base);
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: var(--text-font-size);
+}
+h1, h2, h3 {
+  font-family: var(--header-font-family), var(--header-font-family-fallback);
+  font-weight: 600;
+  color: var(--header-color);
+}
+
+/* =======================================================
+   PORTADA DKS
+   ======================================================= */
+
+.remark-slide-content.portada {
+  background-color: #fdaa02;
+  background-image: none;
+  color: #ffffff;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Oculta numeración en portada */
+.remark-slide-content.portada .remark-slide-number {
+  display: none;
+}
+
+/* Logo superior izquierdo */
+.remark-slide-content.portada .logo-dks {
+  position: absolute;
+  top: 2.2cm;
+  left: 2.6cm;
+}
+
+/* Bloque de texto inferior izquierdo */
+.remark-slide-content.portada .portada-texto {
+  position: absolute;
+  left: 2.8cm;
+  bottom: 2.6cm;
+  text-align: left;
+  max-width: 16cm;
+}
+
+/* Título principal */
+.remark-slide-content.portada h1 {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin: 0 0 0.9cm 0;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Nombre */
+.remark-slide-content.portada .autor {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Cargo */
+.remark-slide-content.portada .cargo {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 0.1cm;
+  color: #ffffff;
+}
+
+
+/* =======================================================
+   FONDO Y ENCABEZADO SLIDES GENERALES DKS
+   ======================================================= */
+
+.remark-slide-content.dks-slide {
+  background-color: #f3f3f3;
+  color: #1c214f;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Encabezado */
+.remark-slide-content.dks-slide .dks-header {
+  position: absolute;
+  top: 0.7cm;
+  left: 1.0cm;
+  right: 1.0cm;
+  height: 1.8cm;
+}
+
+/* Título superior */
+.remark-slide-content.dks-slide .dks-header-title {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #1c214f;
+  margin: 0;
+}
+
+/* Subtítulo superior */
+.remark-slide-content.dks-slide .dks-header-subtitle {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1c214f;
+  margin: 0.1cm 0 0 0;
+}
+
+/* Logo superior derecho */
+.remark-slide-content.dks-slide .dks-header-logo {
+  position: absolute;
+  top: 0.55cm;
+  right: 1.0cm;
+}
+
+.remark-slide-content.dks-slide .dks-header-logo img {
+  width: 105px;
+}
+
+/* Línea naranja */
+.remark-slide-content.dks-slide .dks-line {
+  position: absolute;
+  top: 2.25cm;
+  left: 0;
+  width: 77%;
+  height: 2px;
+  background-color: #fdaa02;
+}
+
+/* Marca de agua */
+.remark-slide-content.dks-slide .dks-watermark {
+  position: absolute;
+  left: -1.5cm;
+  bottom: -1.8cm;
+  z-index: 0;
+}
+
+.remark-slide-content.dks-slide .dks-watermark img {
+  width: 18cm;
+}
+
+
+/* =======================================================
+   CONTENIDO SLIDES GENERALES DKS
+   ======================================================= */
+
+
+.remark-slide-content {
+  background-color: var(--background-color);
+  font-size: 18px;
+  padding: 95px 42px 24px 42px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.remark-slide-content h1 {
+  font-size: var(--header-h1-font-size);
+}
+.remark-slide-content h2 {
+  font-size: var(--header-h2-font-size);
+}
+.remark-slide-content h3 {
+  font-size: var(--header-h3-font-size);
+}
+.remark-slide-content ul {
+  margin-top: 0.3em;
+  margin-bottom: 0.2em;
+  padding-left: 1em;
+}
+.remark-slide-content li {
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+}
+.remark-code, .remark-inline-code {
+  font-family: var(--code-font-family), Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+}
+.remark-code {
+  font-size: var(--code-font-size);
+}
+.remark-inline-code {
+  font-size: var(--code-inline-font-size);
+  color: #179c55;
+}
+.remark-slide-number {
+  color: #00002f;
+  opacity: 1;
+  font-size: 0.9rem;
+}
+strong {
+  font-weight: bold;
+  color: var(--text-bold-color);
+}
+a, a > code {
+  color: #88398a;
+}
+.remark-code-line-highlighted { background-color: rgba(85,206,240, 0.3); }
+
+.inverse {
+  background-color: #55cef0;
+}
+.inverse, .inverse h1, .inverse h2, .inverse h3, .inverse a, .inverse a > code {
+  color: #fff;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 60px;
+  padding-right: 4em;
+  font-size: 0.9em;
+}
+.title-slide, .title-slide h1, .title-slide h2, .title-slide h3 {
+  color: var(--title-slide-text-color);
+}
+.title-slide {
+  background-color: var(--title-slide-background-color);
+}
+.title-slide .remark-slide-number {
+  display: none;
+}
+/* Two-column layout */
+.left-column {
+  width: 20%;
+  height: 92%;
+  float: left;
+}
+.left-column h2, .left-column h3 {
+  color: #0dc96f99;
+}
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #0dc96f;
+}
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right + * {
+  clear: both;
+}
+img, video, iframe {
+  max-width: 100%;
+}
+blockquote {
+  border-left: solid 5px #0dc96f80;
+  padding-left: 1em;
+}
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.remark-slide table thead th {
+  border-bottom: 1px solid #ddd;
+}
+th, td {
+  padding: 5px;
+}
+.remark-slide table:not(.table-unshaded) thead,
+.remark-slide table:not(.table-unshaded) tfoot,
+.remark-slide table:not(.table-unshaded) tr:nth-child(even) {
+  background: #ffedc9;
+}
+table.dataTable tbody {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+table.dataTable.display tbody tr.odd {
+  background-color: var(--background-color);
+}
+table.dataTable.display tbody tr.even {
+  background-color: #ffedc9;
+}
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+  color: var(--text-color);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  color: var(--text-color) !important;
+}
+
+/*-- CODE CHUNKS --*/
+
+/*-- Code chunk background layer --*/
+pre {
+  /*border: 2px solid rgba(199,238,248, 0.8); /* code chunk border*/
+  border:             3px solid rgba(85,206,240, 0.3);
+  box-shadow:         0px 0px 0px 0px var(--azul-claro);
+  padding:            0.1em;                    /* padding between code chunk and border */
+  background:         none !important;
+  overflow-x:         auto;                     /* enable horizontal scrolling with overflow */
+  border-radius:      1px;                      /* modify rounding of corners*/
+}
+
+/*--  --*/
+pre code {
+  background:         none;
+  font-size:          18px !important;
+}
+
+/* Slide Header Background for h1 elements */
+.remark-slide-content.header_background > h1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--header-background-color);
+  color: var(--header-background-text-color);
+  padding: 2rem 64px 1.5rem 64px;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+.remark-slide-content.header_background {
+  padding-top: 7rem;
+}
+
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+.base {
+  color: var(--base);
+}
+.bg-base {
+  background-color: var(--base);
+}
+.white {
+  color: var(--white);
+}
+.bg-white {
+  background-color: var(--white);
+}
+.black {
+  color: var(--black);
+}
+.bg-black {
+  background-color: var(--black);
+}
+
