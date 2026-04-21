@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Analítica Digital y Marketing Predictivo</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Linda Cabrera Orellana" />
+    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
+    <link href="libs/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view-0.2.6/tile-view.js"></script>
+    <script src="libs/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <link href="libs/shareon-1.4.1/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon-1.4.1/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain-0.2.6/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain-0.2.6/shareagain.js"></script>
+    <link rel="stylesheet" href="dks-theme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+class: portada
+
+&lt;div class="logo-dks"&gt;
+  &lt;img src="img/DKS_logo_blanco.png" width="420px"/&gt;
+&lt;/div&gt;
+
+&lt;div class="portada-texto"&gt;
+  &lt;h1&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL&lt;br&gt;APLICADA AL MARKETING&lt;/h1&gt;
+  &lt;p class="autor"&gt;Linda Cabrera Orellana&lt;/p&gt;
+  &lt;p class="cargo"&gt;Senior BI Marketing Analyst&lt;/p&gt;
+  &lt;p class="cargo"&gt;Abril 2026&lt;/p&gt;
+&lt;/div&gt;
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+# Sobre mí
+
+.pull-left[
+
+&lt;img style="border-radius: 50%;" src="img/linda_cabrera.png" width="350px"/&gt;
+&lt;br&gt;
+
+.center[
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg> lindateachtech@gmail.com   <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg> [lindateachtech](https://www.linkedin.com/in/lindateachtech/)   <svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> [lindateachtech](https://github.com/lindateachtech)
+]
+
+]
+
+.pull-right[
+
+Hola, soy **Linda**, Senior BI Marketing Analyst en SIDN y he dedicado los últimos años a explorar en profundidad el valor que los datos pueden aportar al negocio.
+
+- Background sólido en estadística.
+
+- Experiencia en modelización predictiva, business intelligence y visualización de datos.
+
+- Exprofesora universitaria de Cálculo, Estadística y Ecuaciones Diferenciales.
+
+- Certificada en Microsoft PL-300.
+
+- Instructora certificada por The Carpentries para la enseñanza de R y análisis de datos.
+
+- Coorganizadora de R-Ladies Guayaquil y miembro activa de la comunidad de R.
+
+]
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg> Agenda
+
+.pull-left[
+- **Introducción al Marketing Analytics**
+  - Ciclo de vida del dato
+  - ¿Qué es Marketing Analytics?
+  - Customer Analytics
+
+- **Introducción a R!** 🚀
+  - ¿Qué es R?
+  - R, RStudio y Posit Cloud
+  - Entendiendo RStudio
+  - Trabajando con paquetes
+  - Funciones
+]
+
+.pull-right[
+- **Análisis exploratorio de datos (EDA)** 🚀
+  - Estadística descriptiva en R
+  - Análisis de correlaciones
+  - Visualizaciones clave en EDA
+  
+- **Segmentación de clientes usando RFM** 🚀
+  - RFM
+  - Técnicas de clustering
+  - Entendiendo K-means
+  
+- **Customer Lifetime Value** 🚀
+
+]
+
+
+
+---
+
+
+class: portada
+
+&lt;div class="logo-dks"&gt;
+  &lt;img src="img/DKS_logo_blanco.png" width="220px"/&gt;
+&lt;/div&gt;
+
+&lt;div class="portada-texto"&gt;
+  &lt;h1&gt;Introducción al Marketing Analytics&lt;/h1&gt;
+&lt;/div&gt;
+
+
+
+
+---
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg> Ciclo de vida del dato 
+
+## Proceso del _tidyverse_
+
+&lt;br&gt;
+&lt;br&gt;
+
+.center[
+&lt;img src="img/ciclo_dato.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.footnote[Fuente: Adaptado de Wickham &amp; Grolemund, R for Data Science (2017)]
+
+
+
+
+---
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg> ¿Qué es Marketing Analytics?
+
+.center[
+&lt;img src="img/analitica_predictiva.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.footnote[Fuente: Thomas Davenport, Competing on Analytics (2007)]
+
+
+
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg> Principales técnicas de Marketing Analytics
+
+.center[
+&lt;img src="img/tecnicas_mrk_analytics.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.footnote[Fuente: Adaptado de Kumar et al., Cutting-Edge Marketing Analytics (2013)]
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&gt; *"It costs 5 times more to attract a new customer than to keep an existing one."*
+(Philip Kotler, economista estadounidense especialista en mercadeo considerado el padre del marketing.)
+
+
+
+---
+
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"/></svg> Customer Analytics
+
+
+## ¿Qué es Customer Analytics?
+
+Customer Analytics es la disciplina orientada al análisis sistemático de datos del cliente con el fin de comprender su comportamiento, segmentar audiencias, predecir acciones futuras y optimizar la toma de decisiones estratégicas relacionadas con adquisición, retención y maximización de valor.
+
+&lt;br&gt;
+
+## Principales objetivos del Customer Analytics:
+
+.center[
+&lt;img src="img/customer.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+
+
+class: portada
+
+&lt;div class="logo-dks"&gt;
+  &lt;img src="img/DKS_logo_blanco.png" width="220px"/&gt;
+&lt;/div&gt;
+
+&lt;div class="portada-texto"&gt;
+  &lt;h1&gt;Introducción a R&lt;/h1&gt;
+&lt;/div&gt;
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# ¿Qué es R?
+
+Algunos datos importantes que debes conocer acerca de <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg>:
+
+.pull-left[
+&lt;br&gt;
+* Fue desarrollado inicialmente por Robert Gentleman y Ross Ihaka del Departamento de Estadística de la Universidad de Auckland en 1993.
+
+* Es un lenguaje de programación de análisis de datos. 
+
+* Es un entorno de software libre y tiene licencia GNU GLP (Licencia Pública General de GNU).
+]
+
+.pull-right[
+&lt;img src="img/open-source.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
+
+.footnote[[A Brief History R: Past and Future History](https://www.stat.auckland.ac.nz/~ihaka/downloads/Interface98.pdf)]
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+# R, RStudio y Posit Cloud
+
+&lt;img src="img/IDE2.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+# Entendido RStudio
+
+
+&lt;img src="img/entorno2.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+# Trabajando con paquetes
+
+
+&lt;img src="img/paquetes_rstudio.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M58.9 42.1c3-6.1 9.6-9.6 16.3-8.7L320 64 564.8 33.4c6.7-.8 13.3 2.7 16.3 8.7l41.7 83.4c9 17.9-.6 39.6-19.8 45.1L439.6 217.3c-13.9 4-28.8-1.9-36.2-14.3L320 64 236.6 203c-7.4 12.4-22.3 18.3-36.2 14.3L37.1 170.6c-19.3-5.5-28.8-27.2-19.8-45.1L58.9 42.1zM321.1 128l54.9 91.4c14.9 24.8 44.6 36.6 72.5 28.6L576 211.6v167c0 22-15 41.2-36.4 46.6l-204.1 51c-10.2 2.6-20.9 2.6-31 0l-204.1-51C79 419.7 64 400.5 64 378.5v-167L191.6 248c27.8 8 57.6-3.8 72.5-28.6L318.9 128h2.2z"/></svg> ¿Qué es un paquete o una librería?
+
+
+&lt;br&gt;
+
+En R, la unidad fundamental del código compartible es el paquete. Un paquete agrupa código, datos, documentación y pruebas y proporciona un método fácil para compartir con otros.
+
+Esquema de R: 1) R base, 2) Funciones adicionales con paquetes
+
+Debes tener en cuenta que los paquetes: 1) Se instalan en RStudio (solo la primera vez) y, 2) se cargan en RStudio (cada nueva sesión)
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg> Funciones
+
+
+R tiene una gran colección de funciones integradas que se usan así:
+
+&lt;img src="img/funcion.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;
+
+
+``` r
+sqrt(81)        # raíz cuadrada
+## [1] 9
+
+round(7.12)    # redondear
+## [1] 7
+```
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# 🚀 ¡A practicar! — Live coding en RStudio
+
+1. Crea una cuenta gratuita en Posit Cloud.
+
+2. Instala los paquetes `tidyverse`, `datos`, `skimr` y `corrplot`.
+
+
+
+
+---
+
+
+class: portada
+
+&lt;div class="logo-dks"&gt;
+  &lt;img src="img/DKS_logo_blanco.png" width="220px"/&gt;
+&lt;/div&gt;
+
+&lt;div class="portada-texto"&gt;
+  &lt;h1&gt;Análisis exploratorio de datos (EDA)&lt;/h1&gt;
+&lt;/div&gt;
+
+
+---
+
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg> Análisis exploratorio de datos (EDA)
+
+El Análisis Exploratorio de Datos (EDA) es un flujo de trabajo diseñado para obtener una mejor comprensión de sus datos. El flujo de trabajo consta de tres pasos.
+
+- El primero consiste en generar preguntas sobre los datos. En este paso se quiere ser lo más amplio posible, ya que en este momento no se tiene una buena idea de los datos.
+
+- A continuación, se buscan las respuestas a estas preguntas mediante la visualización, la transformación y el modelado de los datos.
+
+- Por último, refine sus preguntas o genere nuevas preguntas
+
+En R hay dos herramientas principales que apoyan el proceso de exploración de datos: los gráficos y los estadísticos de resumen.
+
+
+
+---
+
+background-image: url("img/grammar.png")
+background-size: contain
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg> Gramática de los gráficos
+
+- **Data:** datos sin procesar que desea trazar.
+- **Geometrías `geom_:`** formas geométricas que representarán los datos.
+- **Estética `aes()`:** estética de los objetos geométricos y estadísticos, como posición, color, tamaño, forma y transparencia.
+- **Escalas `scale_`:** asignaciones entre los datos y las dimensiones estéticas, como el rango de datos para trazar el ancho o los valores de los factores para los colores.
+- **Transformaciones estadísticas `stat_`:** resúmenes estadísticos de los datos, como cuantiles, curvas ajustadas y sumas.
+- **Sistema de coordenadas `coord_`:** transformación utilizada para mapear coordenadas de datos en el plano del rectángulo de datos.
+- **Facetas `facet_`:** disposición de los datos en una cuadrícula de gráficos.
+- **Temas visuales `theme()`:** los valores predeterminados visuales generales de una trama, como el fondo, las cuadrículas, los ejes, el tipo de letra predeterminado, los tamaños y los colores.
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.footnote[
+[Referencias de ggplot2](https://ggplot2.tidyverse.org/reference/) | [ggplot2.tidyverse.org](https://ggplot2.tidyverse.org/)
+]
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg>  Gramática de los gráficos
+
+.pull-left[
+Un **ggplot** necesita especificar mínimo tres cosas: los datos, la estética y una geometría. 
+
+Siempre comenzamos a definir un objeto de trazado llamando a la **data** mediante `data %&gt;% ggplot()` que simplemente le dice a `ggplot2` que vamos a trabajar con esos datos.
+
+Primero, cargamos el paquete `ggplot2` que es parte del `tidyverse` y el paquete `datos` para cargar un conjunto de datos asociado a créditos de consumo. Un data.frame con 14 filas y 4454 columnas.
+
+
+``` r
+library(ggplot2)
+library(datos)
+```
+
+]
+
+.pull-right[
+
+``` r
+datos_credito %&gt;% ggplot(aes(x = Edad)) + geom_histogram()
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+```
+
+![](dks_marketing_predictivo_ed1_files/figure-html/graf3-1.png)&lt;!-- --&gt;
+]
+
+
+---
+
+
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg> Valores atípicos
+
+Los valores atípicos, conocidos en inglés como outliers, son puntos en los datos que parecen no ajustarse al patrón. Algunas veces dichos valores atípicos son errores cometidos durante la ingesta de datos; otras veces sugieren nueva información. Cuando tienes una gran cantidad de datos, es difícil identificar los valores atípicos en un histograma. 
+
+Es un buen hábito repetir tu análisis con y sin los valores inusuales. Si tienen un efecto mínimo en los resultados y no puedes descubrir por qué están en los datos, es razonable reemplazarlos con valores ausentes y seguir adelante con tu análisis. Sin embargo, si tienen un efecto sustancial en tus resultados, no deberías ignorarlos sin justificación. Deberás descubrir qué los causó (p.ej., un error en la entrada de datos) y explicitar que los removiste en tu reporte escrito.
+
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg> Valores faltantes
+
+Si has encontrado valores inusuales en tu set de datos y simplemente quieres seguir con el resto de tu análisis, tienes dos opciones.
+
+Desecha la fila completa donde están los valores inusuales.
+
+
+``` r
+datos_credito2 &lt;- datos_credito %&gt;% filter(between(y, 3, 20))
+```
+
+No recomiendo esta opción porque el hecho de que una medida sea inválida no significa que todas las mediciones lo sean. Además, si la calidad de tus datos es baja, después de aplicar esta estrategia en todas tus variables ¡quizás te des cuenta que ya no tienes datos con los que trabajar!
+
+En lugar de eso, recomiendo reemplazar los valores inusuales con valores faltantes. La manera más fácil de hacerlo es usar mutate() para reemplazar la variable con una copia editada de la misma. Puedes usar la función ifelse() para reemplazar valores inusuales con NA:
+
+
+``` r
+datos_credito2 &lt;- datos_credito %&gt;% mutate(y = ifelse(y &lt; 3 | y &gt; 20, NA, y))
+```
+
+  
+  
+---
+
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg> Coeficiente de Correlación de Pearson
+
+El coeficiente de correlación de Pearson es un índice que puede utilizarse para medir el grado de relación de dos variables siempre y cuando ambas sean cuantitativas y continuas.
+
+El valor del índice de correlación denotado por `\(r_{xy}\)` varía en el intervalo `\([-1,1]\)`. El signo indica el sentido de la relación:
+
+- Si `\(r=1\)`, existe una correlación positiva perfecta. El índice indica una dependencia total entre las dos variables denominada relación directa: cuando una de ellas aumenta, la otra también lo hace en proporción constante.
+
+- Si `\(0&lt;r&lt;1\)` entonces existe una correlación positiva.
+
+- Si `\(r=0\)` entonces no existe relación lineal pero esto no necesariamente implica que las variables son independientes: pueden existir todavía relaciones no lineales entre las dos variables.
+
+- Si `\(-1&lt;r&lt;0\)`, existe una correlación negativa.
+
+- Si `\(r=-1\)`, existe una correlación negativa perfecta. El índice indica una dependencia total entre las dos variables llamada relación opuesta: cuando una de ellas aumenta, la otra cambia su signo en proporción constante.
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg> Coeficiente de Correlación de Pearson
+
+El coeficiente de correlación de Pearson es un índice que puede utilizarse para medir el grado de relación de dos variables siempre y cuando ambas sean cuantitativas y continuas.
+
+&lt;img src="img/correlacion.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg> Matriz de Correlación
+
+Matriz que resume la correlación de varias variables.
+
+&lt;img src="img/matriz.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# 🚀 ¡A practicar! — Live coding en RStudio
+
+1. Realiza la práctica `practica_eda.R` 
+
+2. Compara alguna variable categórica con una variable numérica de interés e interpreta los resultados.
+
+
+
+
+---
+
+
+
+class: portada
+
+&lt;div class="logo-dks"&gt;
+  &lt;img src="img/DKS_logo_blanco.png" width="220px"/&gt;
+&lt;/div&gt;
+
+&lt;div class="portada-texto"&gt;
+  &lt;h1&gt;Segmentación de clientes usando RFM&lt;/h1&gt;
+&lt;/div&gt;
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M290.8 48.6l78.4 29.7L288 109.5 206.8 78.3l78.4-29.7c1.8-.7 3.8-.7 5.7 0zM136 92.5V204.7c-1.3 .4-2.6 .8-3.9 1.3l-96 36.4C14.4 250.6 0 271.5 0 294.7V413.9c0 22.2 13.1 42.3 33.5 51.3l96 42.2c14.4 6.3 30.7 6.3 45.1 0L288 457.5l113.5 49.9c14.4 6.3 30.7 6.3 45.1 0l96-42.2c20.3-8.9 33.5-29.1 33.5-51.3V294.7c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-1.3-.5-2.6-.9-3.9-1.3V92.5c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-12.8-4.8-26.9-4.8-39.7 0l-96 36.4C150.4 48.4 136 69.3 136 92.5zM392 210.6l-82.4 31.2V152.6L392 121v89.6zM154.8 250.9l78.4 29.7L152 311.7 70.8 280.6l78.4-29.7c1.8-.7 3.8-.7 5.7 0zm18.8 204.4V354.8L256 323.2v95.9l-82.4 36.2zM421.2 250.9c1.8-.7 3.8-.7 5.7 0l78.4 29.7L424 311.7l-81.2-31.1 78.4-29.7zM523.2 421.2l-77.6 34.1V354.8L528 323.2v90.7c0 3.2-1.9 6-4.8 7.3z"/></svg> Segmentación de clientes
+
+
+La segmentación de clientes consiste en agrupar consumidores con características o comportamientos similares para facilitar la personalización de estrategias de marketing, optimizar recursos y mejorar la toma de decisiones comerciales.
+
+&lt;br&gt;
+
+## ¿Por qué segmentamos clientes?
+
+- Permite diseñar estrategias diferenciadas según el perfil y necesidades de cada grupo de clientes.
+
+- Facilita una asignación más eficiente de recursos comerciales y presupuestos de marketing.
+
+&lt;br&gt;
+
+## Principales enfoques de segmentación:
+
+- **Demográfica:** edad, género, ubicación
+
+- **Psicográfica:** intereses, estilo de vida
+
+- **Conductual:** comportamiento de compra y consumo
+
+- **Basada en valor:** rentabilidad / valor económico del cliente
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M290.8 48.6l78.4 29.7L288 109.5 206.8 78.3l78.4-29.7c1.8-.7 3.8-.7 5.7 0zM136 92.5V204.7c-1.3 .4-2.6 .8-3.9 1.3l-96 36.4C14.4 250.6 0 271.5 0 294.7V413.9c0 22.2 13.1 42.3 33.5 51.3l96 42.2c14.4 6.3 30.7 6.3 45.1 0L288 457.5l113.5 49.9c14.4 6.3 30.7 6.3 45.1 0l96-42.2c20.3-8.9 33.5-29.1 33.5-51.3V294.7c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-1.3-.5-2.6-.9-3.9-1.3V92.5c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-12.8-4.8-26.9-4.8-39.7 0l-96 36.4C150.4 48.4 136 69.3 136 92.5zM392 210.6l-82.4 31.2V152.6L392 121v89.6zM154.8 250.9l78.4 29.7L152 311.7 70.8 280.6l78.4-29.7c1.8-.7 3.8-.7 5.7 0zm18.8 204.4V354.8L256 323.2v95.9l-82.4 36.2zM421.2 250.9c1.8-.7 3.8-.7 5.7 0l78.4 29.7L424 311.7l-81.2-31.1 78.4-29.7zM523.2 421.2l-77.6 34.1V354.8L528 323.2v90.7c0 3.2-1.9 6-4.8 7.3z"/></svg> Segmentación conductual con RFM
+
+## Modelo RFM
+
+El modelo RFM es una metodología de segmentación conductual que evalúa a los clientes según tres dimensiones clave de comportamiento transaccional: **R**ecencia, **F**recuencia y valor **M**onetario.
+Estas métricas son fuertes predictores del valor del cliente y de su probabilidad de recompra.
+
+
+.center[
+&lt;img src="img/rfm.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+## ¿Para qué utilizamos RFM?
+
+- Permite identificar clientes según su nivel de actividad, engagement y valor económico reciente.
+- Facilita la detección de clientes VIP, clientes en riesgo y oportunidades de reactivación.
+
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M290.8 48.6l78.4 29.7L288 109.5 206.8 78.3l78.4-29.7c1.8-.7 3.8-.7 5.7 0zM136 92.5V204.7c-1.3 .4-2.6 .8-3.9 1.3l-96 36.4C14.4 250.6 0 271.5 0 294.7V413.9c0 22.2 13.1 42.3 33.5 51.3l96 42.2c14.4 6.3 30.7 6.3 45.1 0L288 457.5l113.5 49.9c14.4 6.3 30.7 6.3 45.1 0l96-42.2c20.3-8.9 33.5-29.1 33.5-51.3V294.7c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-1.3-.5-2.6-.9-3.9-1.3V92.5c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-12.8-4.8-26.9-4.8-39.7 0l-96 36.4C150.4 48.4 136 69.3 136 92.5zM392 210.6l-82.4 31.2V152.6L392 121v89.6zM154.8 250.9l78.4 29.7L152 311.7 70.8 280.6l78.4-29.7c1.8-.7 3.8-.7 5.7 0zm18.8 204.4V354.8L256 323.2v95.9l-82.4 36.2zM421.2 250.9c1.8-.7 3.8-.7 5.7 0l78.4 29.7L424 311.7l-81.2-31.1 78.4-29.7zM523.2 421.2l-77.6 34.1V354.8L528 323.2v90.7c0 3.2-1.9 6-4.8 7.3z"/></svg> Técnicas de clustering
+
+| Técnica | Descripción | Ventajas | Limitaciones |
+|:--------:|:-----------|:--------|:------------|
+| **K-Means** | Algoritmo de partición que agrupa observaciones alrededor de centroides minimizando la distancia intra-cluster. | Rápido, escalable y fácil de interpretar. | Sensible a outliers y requiere definir previamente el número de clusters (*K*). |
+| **K-Medians / K-Medoids** | Variante robusta de K-Means que utiliza medianas o medoids como centro del cluster en lugar de medias. | Más robusto frente a outliers y distribuciones sesgadas. | Mayor coste computacional y menor escalabilidad. |
+| **Hierarchical Clustering** | Construye una jerarquía de clusters mediante fusiones o divisiones sucesivas entre observaciones. | Muy visual e interpretable mediante dendrogramas. | Poco eficiente en datasets grandes. |
+| **DBSCAN** | Algoritmo basado en densidad que agrupa observaciones según proximidad local entre puntos. | Detecta outliers automáticamente y clusters de forma arbitraria. | Sensible a hiperparámetros y menos efectivo con densidades variables. |
+
+
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M290.8 48.6l78.4 29.7L288 109.5 206.8 78.3l78.4-29.7c1.8-.7 3.8-.7 5.7 0zM136 92.5V204.7c-1.3 .4-2.6 .8-3.9 1.3l-96 36.4C14.4 250.6 0 271.5 0 294.7V413.9c0 22.2 13.1 42.3 33.5 51.3l96 42.2c14.4 6.3 30.7 6.3 45.1 0L288 457.5l113.5 49.9c14.4 6.3 30.7 6.3 45.1 0l96-42.2c20.3-8.9 33.5-29.1 33.5-51.3V294.7c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-1.3-.5-2.6-.9-3.9-1.3V92.5c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-12.8-4.8-26.9-4.8-39.7 0l-96 36.4C150.4 48.4 136 69.3 136 92.5zM392 210.6l-82.4 31.2V152.6L392 121v89.6zM154.8 250.9l78.4 29.7L152 311.7 70.8 280.6l78.4-29.7c1.8-.7 3.8-.7 5.7 0zm18.8 204.4V354.8L256 323.2v95.9l-82.4 36.2zM421.2 250.9c1.8-.7 3.8-.7 5.7 0l78.4 29.7L424 311.7l-81.2-31.1 78.4-29.7zM523.2 421.2l-77.6 34.1V354.8L528 323.2v90.7c0 3.2-1.9 6-4.8 7.3z"/></svg> Entendiendo K-Means
+
+.pull-left[
+- **Distancia:** K-Means agrupa clientes según qué tan parecidos son entre sí, normalmente utilizamos la mediana euclidiana: $$ d(x, y) = \sqrt{ \sum_{i=1}^{n} (x_i - y_i)^2 } $$
+
+
+- **Centroide:** Cada cluster tiene un “centro” representativo.
+
+- **Variabilidad Intra-Cluster:** El algoritmo intenta que los elementos de un cluster sean lo más parecidos posible.
+
+- **Escalado:** Si las variables están en escalas distintas, tratamos de llevarlas a una unidadd de medida única.
+
+- **Número Óptimo de Clusters (K):** Hay que decidir cuántos grupos queremos formar.]
+
+
+.pull-right[
+&lt;img src="img/kmeans.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M290.8 48.6l78.4 29.7L288 109.5 206.8 78.3l78.4-29.7c1.8-.7 3.8-.7 5.7 0zM136 92.5V204.7c-1.3 .4-2.6 .8-3.9 1.3l-96 36.4C14.4 250.6 0 271.5 0 294.7V413.9c0 22.2 13.1 42.3 33.5 51.3l96 42.2c14.4 6.3 30.7 6.3 45.1 0L288 457.5l113.5 49.9c14.4 6.3 30.7 6.3 45.1 0l96-42.2c20.3-8.9 33.5-29.1 33.5-51.3V294.7c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-1.3-.5-2.6-.9-3.9-1.3V92.5c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-12.8-4.8-26.9-4.8-39.7 0l-96 36.4C150.4 48.4 136 69.3 136 92.5zM392 210.6l-82.4 31.2V152.6L392 121v89.6zM154.8 250.9l78.4 29.7L152 311.7 70.8 280.6l78.4-29.7c1.8-.7 3.8-.7 5.7 0zm18.8 204.4V354.8L256 323.2v95.9l-82.4 36.2zM421.2 250.9c1.8-.7 3.8-.7 5.7 0l78.4 29.7L424 311.7l-81.2-31.1 78.4-29.7zM523.2 421.2l-77.6 34.1V354.8L528 323.2v90.7c0 3.2-1.9 6-4.8 7.3z"/></svg> Interpretación de resultados
+
+&lt;br&gt;
+
+| Cluster | Clientes | Últ. Compra | Frecuencia | Gasto Prom. | Ingreso Total |
+|:-------:|:--------:|:-----------:|:----------:|:-----------:|:-------------:|
+| 1 | 33 | 22 | 41 | 46,577 | 1,537,048 |
+| 2 | 7 | 12 | 74 | 171,563 | 1,200,941 |
+| 3 | 4,298 | 93 | 4 | 1,431 | 6,149,221 |
+
+&lt;br&gt;
+
+.center[
+&lt;img src="img/rfm2.png" width="60%" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+
+class: portada
+
+&lt;div class="logo-dks"&gt;
+  &lt;img src="img/DKS_logo_blanco.png" width="220px"/&gt;
+&lt;/div&gt;
+
+&lt;div class="portada-texto"&gt;
+  &lt;h1&gt;Customer Lifetime Value (CLV)&lt;/h1&gt;
+&lt;/div&gt;
+
+
+
+---
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg> Customer Lifetime Value
+
+
+El Customer Lifetime Value (CLV) es una métrica que estima el valor económico de la relación con un cliente individual a lo largo del tiempo. Se trata de una medida tanto retrospectiva como predictiva, ya que utiliza información histórica para proyectar el valor futuro esperado del cliente.
+
+&lt;br&gt;
+
+## Aplicaciones estratégicas del CLV
+
+- **Adquisición:** Determinar cuánto invertir para captar clientes.
+
+- **Retención:** Decidir cuánto invertir en fidelización.
+
+- **Segmentación:** Priorizar clientes según valor esperado.
+
+- **Valoración:** Estimar el valor económico de la cartera de clientes.
+
+
+Al igual que el Net Present Value (NPV) se utiliza para valorar inversiones, el CLV se emplea para valorar relaciones con clientes. En esencia, el CLV representa el valor presente neto esperado de los flujos futuros generados por un cliente.
+
+
+
+&lt;!--
+
+
+class: dks-slide
+
+&lt;div class="dks-header"&gt;
+  &lt;p class="dks-header-title"&gt;MÁSTER EN INTELIGENCIA ARTIFICIAL APLICADA AL MARKETING&lt;/p&gt;
+  &lt;p class="dks-header-subtitle"&gt;ANALÍTICA DIGITAL Y MARKETING PREDICTIVO&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-header-logo"&gt;
+  &lt;img src="img/DKS_isotipo.png"/&gt;
+&lt;/div&gt;
+
+&lt;div class="dks-line"&gt;&lt;/div&gt;
+
+&lt;div class="dks-watermark"&gt;
+  &lt;img src="img/DKS_watermark.png"/&gt;
+&lt;/div&gt;
+
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg> Modelo Base de CLV
+
+
+$$ CLV = (M - R) *  \dfrac{ 1 + d }{ 1 + d + r }   $$
+
+donde:
+
+`\(M\)` = Margen generado por cliente por período
+
+--&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "4:3"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
